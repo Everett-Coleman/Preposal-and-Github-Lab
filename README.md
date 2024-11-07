@@ -4,11 +4,11 @@ In this lab, we are going to brainstorm for our final project and think about va
 
 ## What idea(s) do you have for your final project?
 
-Detailed Blackjack game, GB studio game, A discord bot, Evolved Space War pygame, NonProfit Website
+Detailed Blackjack game
 
 ## If you plan to collaborate with one or two classmates, what are their names?
 
-None as of now 
+Kaili & Michael
 ## Do you have any questions of your own?
 
 
