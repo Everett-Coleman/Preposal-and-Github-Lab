@@ -1,0 +1,6 @@
+import pygame
+
+display_width = 900
+display_heighht = 700
+
+background_color = (,)
