@@ -40,27 +40,34 @@ def main():
     budget = initial_budget
     expenses = []
 
+    categories = ["Food", "Transportation", "Utilities", "Entertainment", "Healthcare", "Other"]
+
     while True:
         print("\nWhat would you like to do?")
-        print("1. Add other expense")
+        print("1. Add an expense")
         print("2. Show budget details")
-        print("3. Bills")
-        print("4. Exit")
+        print("3. Exit")
         choice = input("Enter an option (1/2/3): ")
 
         if choice == "1"
             description = input("Enter expense description")
             amount = float(input("Enter expense amount: "))
-            add_expense(expenses, description, amount)
+            print("Choose a category:")
+            for i, category  in enumerate(categories, 1):
+                print(f"{i}. {category}")
+            category_choice = int(input("Enter the number that matches category: "))
+            if 1<= category_choice <= len(categories):
+                category = categories[category_choice -1]
+                add_expense(expenses, description, amount, category)
+            else:
+                print("Invalid Option!!! Try again?")
         elif choice == "2"
             show_budget_details(budget, expenses)
         elif choice == "3"
-            show_bills() #shows monthly bills being deducted from budget
-        elif choice == "4"
-            print("Exiting Budget App. Goodbye!")
+            print("Now Closing Budget App. Goodbye!")
             break
         else:
-            print("Invalid choice!!! Try Again?)
+            print("Invalid choice!!! Try Again?")
 
 if __name__ == "__main__":
     main() 
