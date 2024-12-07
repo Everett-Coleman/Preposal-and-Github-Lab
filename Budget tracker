@@ -1,0 +1,14 @@
+def main():
+    print("Welcomeo to the Budget App")
+    initial_budget = float(input("Please enter your Budget: "))
+    budget = initial_budget
+    expenses = []
+
+    while True:
+        print("\nWhat would you like to do?")
+        print("1. Add an expense")
+        print("2. Show budget details")
+        print("3. Exit")
+        choice = input("Enter an option (1/2/3): ")
+
+        if choice == "1"
