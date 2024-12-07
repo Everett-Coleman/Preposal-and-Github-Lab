@@ -1,7 +1,7 @@
 import json
 
 def add_expense(expenses, description, amount, category):
-    expenses.append({"description": description, "amount": amount, "category"})
+    expenses.append({"description": description, "amount": amount, "category": category})
     print(f"Added expense: {description}, Amount: {amount}, Category: {category}")
 
 def get_total_expenses(expenses):
@@ -50,8 +50,8 @@ def main():
         print("3. Exit")
         choice = input("Enter an option (1/2/3): ")
 
-        if choice == "1"
-            description = input("Enter expense description")
+        if choice == "1":
+            description = input("Enter expense description: ")
             amount = float(input("Enter expense amount: "))
             print("Choose a category:")
             for i, category  in enumerate(categories, 1):
@@ -62,13 +62,14 @@ def main():
                 add_expense(expenses, description, amount, category)
             else:
                 print("Invalid Option!!! Try again?")
-        elif choice == "2"
+        elif choice == "2":    
             show_budget_details(budget, expenses)
-        elif choice == "3"
+        elif choice == "3":
             print("Now Closing Budget App. Goodbye!")
             break
         else:
             print("Invalid choice!!! Try Again?")
+
 
 if __name__ == "__main__":
     main() 
