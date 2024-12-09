@@ -1,6 +1,7 @@
 # Preposal-and-Github-Lab
 In this lab, we are going to brainstorm for our final project and think about various options.  
 # Preproposal
+A python code that acts as an budget tracker app. Letting you set a budget and input various amounts. 
 
 ## What idea(s) do you have for your final project?
 
